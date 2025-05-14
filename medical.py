@@ -4,7 +4,7 @@ import fitz  # PyMuPDF
 import pandas as pd
 import io
 
-qa = pipeline('question-answering')
+qa = pipeline('question-answering', model="distilbert-base-cased-distilled-squad")
 summary_pipeline = pipeline('summarization')
 
 st.title("🩺 Medical Report Summarizer")
